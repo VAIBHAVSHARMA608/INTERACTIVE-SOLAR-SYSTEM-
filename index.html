@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Solar System - One Cup</title>
+    <style>
+      body { margin: 0; overflow: hidden; }
+      /* Optional: Make sure UI panel and nametags are always on top */
+      div[style*="position: absolute"] { z-index: 10; }
+      @media (max-width: 600px) {
+        div[style*="position: absolute"] {
+          font-size: 12px !important;
+          padding: 5px !important;
+        }
+        input[type="range"] {
+          width: 70px !important;
+        }
+        button {
+          font-size: 12px !important;
+          padding: 4px 8px !important;
+        }
+      }
+    </style>
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <!-- No need for extra sliders here; all UI is handled in app.js -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
